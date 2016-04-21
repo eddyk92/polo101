@@ -77,6 +77,8 @@
 	color: white;
 	font-family: open sans condense;
 	font-style: bold;
+	padding-bottom: 1%;
+	padding-top: 1%;
 }
 ul{
 	color: white;
@@ -127,8 +129,17 @@ ul{
 .flip-container .flipper .back {
 	transform: rotateY(180deg);
 }
-
-
+.google{
+	background-color: green;}
+.title3{
+	color: white;
+	font-family: open sans condense;
+	font-style: bold;
+	font-size: 90px;
+	background-color: green; 
+	/*padding-left: 15%;*/
+	height: 500px;
+}
 
 
 
