@@ -60,5 +60,92 @@
 	padding-bottom: 10px;
 }
 
+.termin{
+	margin-top: 10px;
+	position: relative;
+    width: 100%;
+    height: 700px;
+	background: url(/img/polo4.jpg) no-repeat center center scroll;
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	margin-top: 2%;
+}
+
+.title2{
+	text-align: center;
+	color: white;
+	font-family: open sans condense;
+	font-style: bold;
+}
+ul{
+	color: white;
+	font-weight: bold;
+}
+.athlete {
+	margin: 5%;
+}
+
+/*.flip-container{
+	position: absolute;
+	perspective: 1000;
+	-moz-transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}*/
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+.flip-container,
+.flip-container .front,
+.flip-container .back {
+/*	-moz-border-radius: 250px;
+  	-webkit-border-radius: 250px;
+  	border-radius: 250px;*/
+  	width: 250px;
+ 	height: 250px;
+  	/*overflow: hidden;*/
+}
+.flip-container .flipper {
+	transition: 0.6;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.flip-container .flipper .front,
+.flip-container .flipper .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.flip-container .flipper .front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+.flip-container .flipper .back {
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
