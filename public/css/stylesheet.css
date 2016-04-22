@@ -138,10 +138,23 @@ ul{
 	font-size: 90px;
 	background-color: green; 
 	/*padding-left: 15%;*/
-	height: 500px;
+	/*height: 500px;*/
+}
+#map {
+	height: 400px;
+	width: 500px;
+	background-color: #CCC;
+	float: right;
+	margin-top: 3%;
+	margin-bottom: 6%;
+	margin-right: -7%;
 }
 
-
+.path {
+	stroke: red;
+	stroke-width: 0.5;
+	fill: grey;
+}
 
 
 
