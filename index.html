@@ -57,55 +57,9 @@
 	</div>
 
 	<!-- popular countries -->
-	<!-- implementation of the hosted D3- and TopoJson js-libraries -->
-  	<script src="//d3js.org/d3.v3.min.js"></script>
-	<script src="//d3js.org/topojson.v1.min.js"></script>
-	<!-- map creation -->
-  <script>
- 
-  // projection-settings for mercator    
-  var projection = d3.geo.mercator()
-      // where to center the map in degrees
-      .center([0, 50 ])
-      // zoomlevel
-      .scale(100)
-      // map-rotation
-      .rotate([0,0]);
- 
-  // defines "svg" as data type and "make canvas" command
-  var svg = d3.select("body").append("svg")
-      .attr("width", 1000)
-      .attr("height", 600);
- 
-  // defines "path" as return of geographic features
-  var path = d3.geo.path()
-      .projection(projection);
- 
-  // group the svg layers 
-  var g = svg.append("g");
- 
-  // load data and display the map on the canvas with country geometries
-  d3.json("/public/js/world-topo-min.json", function(error, topology) {
-      g.selectAll("path")
-        .data(topojson.object(topology, topology.objects.countries)
-            .geometries)
-      .enter()
-        .append("path")
-        .attr("d", path)
-  });
- 
-  // zoom and pan functionality
-  /*var zoom = d3.behavior.zoom()
-      .on("zoom",function() {
-          g.attr("transform","translate("+ 
-              d3.event.translate.join(",")+")scale("+d3.event.scale+")");
-          g.selectAll("path")  
-              .attr("d", path.projection(projection)); 
-    });
- 
-  svg.call(zoom)*/
- 
-  </script>
+		<h2 class="history text-center">Popular Polo Countries</h2>
+		<script id="infogram_0_4sMZb60c57IENkyz" title="Polo" src="//e.infogr.am/js/embed.js?JYo" type="text/javascript"></script>
+
 
 	<!-- Object of the game -->
 	<div class="container rules">
