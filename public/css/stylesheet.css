@@ -87,7 +87,9 @@ ul{
 .athlete {
 	margin: 5%;
 }
-
+.players {
+	color: gray;
+}
 /*.flip-container{
 	position: absolute;
 	perspective: 1000;
